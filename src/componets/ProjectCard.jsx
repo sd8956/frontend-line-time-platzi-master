@@ -15,7 +15,7 @@ const ProjectCard = (project) => (
       <div className="adicionalData">
           <label htmlFor="">Tecnologias: {project.tec}</label>
           <br/>
-          <a className="projectURl" href={project.url}>Ver proyecto</a>
+          <a target="blank" className="projectURl" href={project.url}>Ver proyecto</a>
       </div>
     </article>
   </>
