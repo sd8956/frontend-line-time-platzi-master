@@ -8,7 +8,6 @@
   border-radius: 15px;
   animation-duration: 2s;
   animation-name: fade;
-  cursor: pointer;
   transition: 450ms all;
   transform-origin: center;
   margin-bottom: 20px;

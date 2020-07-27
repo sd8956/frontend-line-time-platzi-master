@@ -1,8 +1,8 @@
 import React from 'react';
 import useInitialState from '../hooks/useInitialState';
-import CourseCard from '../componets/CourseCard'
 import Hero from '../componets/Hero.jsx'
-import '../assets/Courses.css'
+import CourseCard from '../componets/CourseCard'
+import '../assets/mainContainer.css'
 
 const API = 'http://localhost:8000/courses';
 
@@ -17,7 +17,7 @@ const Courses = () => {
   return (
     <>
       <Hero {...title}></Hero>
-      <div className="coursesContainer">
+      <div className="container">
         {initialState.map(data =>
           <CourseCard key={data._id.$oid} {...data}/>
         )}
