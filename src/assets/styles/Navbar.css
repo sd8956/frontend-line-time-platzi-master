@@ -1,0 +1,33 @@
+header{
+  background-color: #fafbfc;
+  color: #191a22;
+  border-bottom: 1px solid #5EE9FF;
+  padding-left: 0;
+  margin-bottom: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  min-height: 60px;
+}
+
+.links{
+  text-decoration: none;
+  color: black;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+	.links {
+    font-size: 13px;
+	}
+}

@@ -1,0 +1,31 @@
+.homeCard {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #FAFAFA;
+  box-shadow: 9px 15px 20px rgba(12, 15, 17, 0.493);
+  border-radius: 20px;
+  animation-name: fade;
+  animation-duration: 2s;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center;
+}
+
+@keyframes fade {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+	.homeCard {
+    height: 100px;
+	}
+}
