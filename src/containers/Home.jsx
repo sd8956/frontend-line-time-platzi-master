@@ -1,40 +1,31 @@
 import React from 'react'
 import Hero from '../componets/Hero.jsx'
-import HomeCard from '../componets/HomeCard.jsx'
-import { Link } from 'react-router-dom'
+import Slider from '../componets/Slider.jsx'
+import CourseSlider from '../componets/CourseSlider.jsx'
+import SessionsSlider from '../componets/SessionsSlider.jsx'
 import '../assets/Home.css'
 
 const title = {
   text: "¿Que se logro en tres meses?"
 }
 
-const cards = [
-  {
-    text: "Cursos",
-  },
-  {
-    text: "Proyectos",
-  },
-  {
-    text: "Sesiones Tecnicas",
-  }
-]
-
 const Home = () => (
   <>
     <Hero {...title}></Hero>
-    <div className="homeContainer">
-      <Link to="/courses">
-        <HomeCard {...cards[0]}></HomeCard>
-      </Link>
-      <Link to="/projects">
-        <HomeCard {...cards[1]}></HomeCard>
-      </Link>
-      <Link to="/sessions">
-        <HomeCard {...cards[2]}></HomeCard>
-      </Link>
+    <section className="basicContainer" id="projects">
+      <div><h1>Proyectos</h1></div>
+      <Slider></Slider>
+    </section>
 
-    </div>
+    <section className="basicContainer" id="courses">
+      <div><h1>Cursos</h1></div>
+      <CourseSlider></CourseSlider>
+    </section>
+
+    <section className="basicContainer" id="sessions">
+      <div><h1>Sesiones Tecnicas</h1></div>   
+      <SessionsSlider></SessionsSlider>
+    </section>
   </>
 )
 

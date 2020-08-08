@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
 
 body{
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  color: white;
 }
 
 *{

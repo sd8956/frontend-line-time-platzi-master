@@ -1,16 +1,13 @@
 .courseCard {
   display: grid;
   grid-template-rows: repeat(2);
+  width: 80%;
   text-align: center;
   text-decoration: none;
   background-color: #FAFAFA;
-  box-shadow: 9px 15px 30px rgba(12, 15, 17, 0.493);
-  border-radius: 15px;
-  animation-duration: 2s;
-  animation-name: fade;
-  transition: 450ms all;
-  transform-origin: center;
   margin-bottom: 20px;
+  margin: 0 auto;
+  color: black;
 }
 
 .cardDetails{
@@ -32,13 +29,4 @@
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 0 0 5px 5px;
-}
-
-@keyframes fade {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
 }

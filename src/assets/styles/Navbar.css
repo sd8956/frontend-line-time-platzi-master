@@ -1,10 +1,7 @@
 header{
-  background-color: #fafbfc;
-  color: #191a22;
-  border-bottom: 1px solid #5EE9FF;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
   padding-left: 0;
   margin-bottom: 5px;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -13,6 +10,7 @@ header{
 nav{
   display: flex;
   justify-content: space-between;
+  position: relative;
   align-items: center;
   padding: 10px;
   min-height: 60px;
@@ -20,7 +18,7 @@ nav{
 
 .links{
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 0 20px;
   font-weight: 600;
   font-size: 20px;
